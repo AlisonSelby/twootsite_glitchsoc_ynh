@@ -48,7 +48,7 @@ ram.runtime = "1G"
         [resources.sources.main]
         url = "https://github.com/glitch-soc/mastodon/archive/1cc3fcf7d089005e089cf523ea8cfc5193291693.tar.gz"
         sha256 = "b93374065ec3b81fe505452bd109f2c11e6bd01bfe3fa15fbc60e655076bfc8e"
-
+        autoupdate.upstream = "https://github.com/glitch-soc/mastodon"
         autoupdate.strategy = "latest_github_commit"
 
     [resources.system_user]
