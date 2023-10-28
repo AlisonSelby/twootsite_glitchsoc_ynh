@@ -46,11 +46,11 @@ Voir plus [sur la documentation](https://glitch-soc.github.io/docs/) (en anglais
 
 
 **Version incluse :** 2023.07.29~ynh1
+
 ## Documentations et ressources
 
 * Site officiel de l’app : <https://glitch-soc.github.io/docs/>
 * Dépôt de code officiel de l’app : <https://github.com/glitch-soc/mastodon>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_glitchsoc>
 * Signaler un bug : <https://github.com/YunoHost-Apps/glitchsoc_ynh/issues>
 
 ## Informations pour les développeurs
