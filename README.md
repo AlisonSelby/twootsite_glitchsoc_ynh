@@ -45,28 +45,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 See more [on the documentation](https://glitch-soc.github.io/docs/).
 
 
-<<<<<<< HEAD
-**Shipped version:** 2023.07.29~ynh1
-=======
-**Shipped version:** 2023.11.26~ynh1
-## Disclaimers / important information
-
-⚠️ Glitch-Soc is beta software, and under active development. Use at your own risk!
-
-### Install
-
-* This app require a dedicated domain or subdomain.
-* The user choosen during the installation is created in Glitch-Soc with admin rights.
-
-LDAP authentication and SSO are enabled. All YunoHost users can authenticate.
-
-We invite you to block remote malicious instances from the administration interface. You can also add text on your home page.
-
-### Known issues
-
-* When logged in with SSO, log-out from YunoHost's portal don't log-out from Glitch-Soc. See https://github.com/YunoHost/issues/issues/501
->>>>>>> origin/testing
-
+**Shipped version:** 2023.11.26~ynh2
 ## Documentation and resources
 
 * Official app website: <https://glitch-soc.github.io/docs/>
