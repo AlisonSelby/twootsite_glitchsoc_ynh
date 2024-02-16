@@ -342,6 +342,7 @@ then
 		ynh_use_nodejs
 		corepack enable
 		yarn install
+		ynh_exec_warn_less ynh_exec_as $app RAILS_ENV=production $ynh_ruby_load_path yarn run build:production
 		if [ -d "$final_path/live/public/assets" ]; then
 			ynh_exec_warn_less ynh_exec_as $app RAILS_ENV=production $ynh_ruby_load_path $ld_preload bin/bundle exec rails assets:clean
 		fi

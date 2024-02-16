@@ -11,7 +11,7 @@
     "upstream": {
         "license": "AGPL-3.0-or-later",
         "website": "https://glitch-soc.github.io/docs/",
-        "code": "https://github.com/glitch-soc/mastodon"
+        "code": "https://github.com/AlisonSelby/glitchsoc"
     },
     "license": "AGPL-3.0-or-later",
     "maintainer": {
