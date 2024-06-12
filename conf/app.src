@@ -1,7 +1,7 @@
-SOURCE_URL=https://github.com/AlisonSelby/glitchsoc/archive/3f15ea466ce7af5890bfb0048ceb24d8977223d0.tar.gz
-SOURCE_SUM=e17cab3e244d0e89d032f653a73a05600e49e10ac3f399336d02be107c6fab06
+SOURCE_URL=https://github.com//archive/null.tar.gz
+SOURCE_SUM=46f10e03fa5f8977ccd08dff27c9cf9b755d1c0baf9ba1db2e06456e09c0b346
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=3f15ea466ce7af5890bfb0048ceb24d8977223d0.tar.gz
+SOURCE_FILENAME=null.tar.gz
 SOURCE_EXTRACT=true
