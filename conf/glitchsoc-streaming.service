@@ -9,6 +9,7 @@ WorkingDirectory=__INSTALL_DIR__/live
 Environment="NODE_ENV=production"
 Environment="PORT=__PORT_STREAM__"
 Environment="__YNH_NODE_LOAD_PATH__"
+Environment="warn"
 ExecStart=__YNH_NODE__ ./streaming
 TimeoutSec=15
 Restart=always

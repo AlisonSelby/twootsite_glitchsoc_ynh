@@ -10,6 +10,7 @@ Environment="__LD_PRELOAD__"
 Environment="RAILS_ENV=production"
 Environment="PORT=__PORT_WEB__"
 Environment="__YNH_RUBY_LOAD_PATH__"
+Environment="warn"
 ExecStart=__INSTALL_DIR__/live/bin/bundle exec puma -C config/puma.rb
 ExecReload=/bin/kill -SIGUSR1 $MAINPID
 TimeoutSec=15
@@ -34,6 +35,7 @@ ProtectKernelModules=yes
 ProtectKernelTunables=yes
 LockPersonality=yes
 SystemCallFilter=~@clock @debug @module @mount @obsolete @reboot @setuid @swap
+# ReadWritePaths=/var/www/glitchsoc/live /mnt/media-storage/glitchsoc
 
 # Denying access to capabilities that should not be relevant for webapps
 # Doc: https://man7.org/linux/man-pages/man7/capabilities.7.html
