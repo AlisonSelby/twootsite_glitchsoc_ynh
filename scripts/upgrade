@@ -81,6 +81,7 @@ ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
 #=================================================
 ynh_script_progression --message="Upgrading source files..." --weight=1
 
+rm -r "$install_dir/live/app"
 # Download Mastodon
 ynh_setup_source --dest_dir="$install_dir/live" --keep="public/system/"
 
@@ -116,6 +117,9 @@ pushd "$install_dir/live"
 	# This export might be removed in yunohost 12
 	export COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 	corepack enable
+	if [ -d "$install_dir/live/mode_modules" ]; then
+		ynh_exec_warn_less ynh_exec_as "$app" rm -r node_modules
+	fi
 	yarn install
 	if [ -d "$install_dir/live/public/assets" ]; then
 		ynh_exec_warn_less ynh_exec_as "$app" RAILS_ENV=production COREPACK_ENABLE_DOWNLOAD_PROMPT=0 "$ynh_ruby_load_path" $ld_preload bin/bundle exec rails assets:clean
