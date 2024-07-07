@@ -117,7 +117,7 @@ pushd "$install_dir/live"
 	# This export might be removed in yunohost 12
 	export COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 	corepack enable
-	if [ -d "$install_dir/live/mode_modules" ]; then
+	if [ -d "$install_dir/live/node_modules" ]; then
 		ynh_exec_warn_less ynh_exec_as "$app" rm -r node_modules
 	fi
 	yarn install
